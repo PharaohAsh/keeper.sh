@@ -17,6 +17,7 @@ const schema = {
   POLAR_MODE: "'sandbox' | 'production' | undefined?",
   PUSH_REDUCED_POLLING: "boolean?",
   REDIS_URL: "string.url",
+  SYNC_CRON: "string?",
   WEBHOOK_PUBLIC_URL: "string.url?",
   WORKER_JOB_QUEUE_ENABLED: "boolean?",
 } as const;

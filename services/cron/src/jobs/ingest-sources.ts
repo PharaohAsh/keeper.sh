@@ -1966,7 +1966,7 @@ export default withCronWideEvent({
       throw new AggregateError(failures, "Calendar source ingestion completed with failures");
     }
   },
-  cron: "@every_1_minutes",
+  cron: env.SYNC_CRON ?? "0 0 * * * *",
   immediate: true,
   name: "ingest-sources",
   overrunProtection: false,
