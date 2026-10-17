@@ -51,5 +51,5 @@ const createPushJob = (plan: Plan, cron: string): CronOptions =>
 
 export default [
   createPushJob("free", "@every_30_minutes"),
-  createPushJob("pro", "@every_1_minutes"),
+  createPushJob("pro", "0 0 * * * *"),
 ];
